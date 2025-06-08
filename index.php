@@ -17,23 +17,9 @@
 			content: "_";
 			animation: blink 1s step-end infinite;
 		}
-		.toggle-btn {
-			position: fixed;
-			top: 1rem;
-			right: 1rem;
-			padding: 0.3rem 0.6rem;
-			background: #222;
-			color: #eee;
-			border: 1px solid #666;
-			cursor: pointer;
-			font-size: 0.8rem;
-		}
 	</style>
 </head>
-<body id="body" class="dark-mode">
-
-<!-- THEME TOGGLE BUTTON -->
-<button class="toggle-btn" onclick="toggleTheme()">🌓 Toggle</button>
+<body class="dark-mode">
 
 <main>
 
@@ -57,27 +43,24 @@
 	?>
 	<p><strong><?=$greeting?></strong></p>
 
-	<!-- NAME WITH CURSOR -->
+	<!-- USERNAME WITH CURSOR -->
 	<h1 class="blinking-cursor">~<?=$user?></h1>
 
+	<!-- BIO -->
 	<p>Welcome to my tiny, text-based fortress on the web.</p>
-	<p>💻 Cybersecurity nerd. 🕹 Indie game developer. 🛵 Vespa enthusiast.</p>
+	<p>💻 Cybersecurity nerd. 🕹 Indie game dev. 🛵 Vespa tinkerer.</p>
 
-	<!-- SOCIAL LINKS -->
-	<p>
-		<a href="https://github.com/brannn86"><i class="fa fa-github"></i> GitHub</a> |
-		<a href="https://mastodon.social/@yourname"><i class="fa fa-comments"></i> Mastodon</a> |
-		<a href="mailto:<?=$user?>@envs.net"><i class="fa fa-envelope"></i> Email</a> |
-		<a href="https://discord.gg/RHkP8J8K"><i class="fa fa-discord"></i> Discord</a>
-	</p>
-
-	<!-- CONTACT TABLE -->
-	<table>
-		<tr><th>Service</th><th>Handle</th></tr>
-		<tr><td>IRC:</td><td><?=$user?>@tilde.chat</td></tr>
-		<tr><td>Mail:</td><td><code><?=$user?>&#64;envs.net</code></td></tr>
-		<tr><td>Discord:</td><td>brannn86</td></tr>
-	</table>
+	<!-- CONTACT + SOCIAL COMBO -->
+	<section>
+		<h3>Contact</h3>
+		<ul>
+			<li><i class="fa fa-envelope"></i> <a href="mailto:<?=$user?>@envs.net"><?=$user?>@envs.net</a></li>
+			<li><i class="fa fa-github"></i> <a href="https://github.com/brannn86">github.com/brannn86</a></li>
+			<li><i class="fa fa-comments"></i> <a href="https://mastodon.social/@yourname">@yourname@mastodon.social</a></li>
+			<li><i class="fa fa-discord"></i> brannn86 (or <a href="https://discord.gg/RHkP8J8K">server invite</a>)</li>
+			<li><i class="fa fa-terminal"></i> IRC: <?=$user?>@tilde.chat</li>
+		</ul>
+	</section>
 
 </main>
 
@@ -91,26 +74,13 @@
 			<li><a href="now.php">Now</a></li>
 			<li><a href="about.php">About</a></li>
 		</ul>
-
-		<h3>Find Me On</h3>
-		<ul>
-			<li><a href="https://github.com/brannn86"><i class="fa fa-github"></i> GitHub</a></li>
-			<li><a href="#"><i class="fa fa-comments"></i> Mastodon</a></li>
-			<li><a href="#"><i class="fa fa-discord"></i> Discord Server</a></li>
-		</ul>
 	</nav>
 </div>
 
 <!-- FOOTER -->
 <footer>
-	<small>Site deployed via Git · 🚬 fueled · Emotionally supported by Vesper-GPT </small>
+	<small>Site deployed via Git · Built with black coffee and bash · Powered by Vesper-GPT</small>
 </footer>
-
-<script>
-	function toggleTheme() {
-		document.body.classList.toggle('dark-mode');
-	}
-</script>
 
 </body>
 </html>
