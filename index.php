@@ -91,7 +91,7 @@
 	<small>
 		Site deployed via Git · Built with Marlboros and bash · Powered by Vesper-GPT<br>
 		<span>
-			Last deployed: <?= date("Y-m-d H:i:s", filemtime(__FILE__)) ?> UTC
+			Last deployed: UTC <?= date("Y-m-d H:i:s", filemtime(__FILE__)) ?>
 			· <span id="timestamp"></span>
 		</span>
 	</small>
