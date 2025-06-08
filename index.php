@@ -36,9 +36,6 @@
 
 	</main>
 
-<!-- You can also enable a right sidebar -->
-<!-- SIDEBAR -->
-<!--
 	<div id="sidebar">
 
 		<nav class="block">
@@ -47,5 +44,7 @@
 			</p>
 		</nav>
 	</div>
--->
+
+	<footer>Deployed by Git, powered by coffee ☕</footer>
+
 </html>
