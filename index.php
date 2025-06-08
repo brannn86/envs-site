@@ -10,7 +10,7 @@
 		<meta name="description" content="~<?=$user?> on envs.net" />
 		<meta name="keywords" content="<?=$user?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="https://envs.net/css/dracula.css" />
+		<link rel="stylesheet" href="https://envs.net/css/hacker.css" />
 		<link rel="stylesheet" href="https://envs.net/css/fork-awesome.min.css" />
 	</head>
 	<body id="body" class="dark-mode">
