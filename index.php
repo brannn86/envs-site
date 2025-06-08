@@ -24,7 +24,7 @@
 <main>
 
 	<!-- ASCII ART LOGO -->
-	<pre class="block">
+	<pre>
 	_                                                       _   
 	| |                                                     | |  
 	| |__  _ __ __ _ _ __    ___ _ ____   _____   _ __   ___| |_ 
@@ -38,7 +38,7 @@
 	$hour = (int)date("G");
 	$greeting = "Heya, stranger.";
 	if ($hour < 12) $greeting = "Good morning, net wanderer.";
-	elseif ($hour < 18) $greeting = "Good afternoon, cyber cowboy.";
+	elseif ($hour < 18) $greeting = "Good afternoon, space cowboy.";
 	else $greeting = "Good evening, ghost in the machine.";
 	?>
 	<p><strong><?=$greeting?></strong></p>
@@ -52,12 +52,13 @@
 
 	<!-- CONTACT + SOCIAL COMBO -->
 	<section>
-		<h3>Contact</h3>
+		<h3>Social Links</h3>
 		<ul>
 			<li><i class="fa fa-envelope"></i> <a href="mailto:<?=$user?>@envs.net"><?=$user?>@envs.net</a></li>
 			<li><i class="fa fa-github"></i> <a href="https://github.com/brannn86">github.com/brannn86</a></li>
-			<li><i class="fa fa-comments"></i> <a href="https://mastodon.social/@yourname">@yourname@mastodon.social</a></li>
-			<li><i class="fa fa-discord"></i> brannn86 (or <a href="https://discord.gg/RHkP8J8K">server invite</a>)</li>
+			<li><i class="fa fa-gamepad"></i> <a href="https://brannn86.itch.io">Itch.io</a></li>
+			<li><i class="fa fa-comments"></i> <a href="#">@bran@mastodon.social</a></li>
+			<li><i class="fa fa-discord"></i> brannn86 (or <a href="#">server invite</a>)</li>
 			<li><i class="fa fa-terminal"></i> IRC: <?=$user?>@tilde.chat</li>
 		</ul>
 	</section>
@@ -74,13 +75,37 @@
 			<li><a href="now.php">Now</a></li>
 			<li><a href="about.php">About</a></li>
 		</ul>
+
+		<h3>Find Me On</h3>
+		<ul>
+			<li><a href="https://github.com/brannn86"><i class="fa fa-github"></i> GitHub</a></li>
+			<li><a href="#"><i class="fa fa-comments"></i> Mastodon</a></li>
+			<li><a href="#"><i class="fa fa-discord"></i> Discord Server</a></li>
+		</ul>
+
 	</nav>
 </div>
 
 <!-- FOOTER -->
 <footer>
-	<small>Site deployed via Git · Built with black coffee and bash · Powered by Vesper-GPT</small>
+	<small>
+		Site deployed via Git · Built with Marlboros and bash · Powered by Vesper-GPT<br>
+		<span>
+			Last deployed: <?= date("Y-m-d H:i:s", filemtime(__FILE__)) ?> UTC
+			· <span id="timestamp"></span>
+		</span>
+	</small>
 </footer>
+
+<script>
+function updateTime() {
+	const now = new Date();
+	const iso = now.toISOString().replace('T', ' ').split('.')[0];
+	document.getElementById("timestamp").textContent = `UTC ${iso}`;
+}
+setInterval(updateTime, 1000);
+updateTime();
+</script>
 
 </body>
 </html>
