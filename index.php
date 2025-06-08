@@ -15,13 +15,14 @@
 
 	<!-- ASCII ART LOGO -->
 	<pre class="block">
-   __     ______  _    _   _   _ _____ _   _ 
-   \ \   / / __ \| |  | | | \ | |_   _| \ | |
-    \ \_/ / |  | | |  | | |  \| | | | |  \| |
-     \   /| |  | | |  | | | . ` | | | | . ` |
-      | | | |__| | |__| | | |\  |_| |_| |\  |
-      |_|  \____/ \____/  |_| \_|_____|_| \_|
-                                            
+
+	_                                                       _   
+	| |                                                     | |  
+	| |__  _ __ __ _ _ __    ___ _ ____   _____   _ __   ___| |_ 
+	| '_ \| '__/ _` | '_ \  / _ \ '_ \ \ / / __| | '_ \ / _ \ __|
+	| |_) | | | (_| | | | ||  __/ | | \ V /\__ \_| | | |  __/ |_ 
+	|_.__/|_|  \__,_|_| |_(_)___|_| |_|\_/ |___(_)_| |_|\___|\__|
+
 	</pre>
 
 	<h1>~<?=$user?></h1>
@@ -60,15 +61,15 @@
 		<h3>Find Me On</h3>
 		<ul>
 			<li><a href="https://github.com/brannn86"><i class="fa fa-github"></i> GitHub</a></li>
-			<li><a href="https://mastodon.social/@yourname"><i class="fa fa-comments"></i> Mastodon</a></li>
-			<li><a href="https://discord.gg/RHkP8J8K"><i class="fa fa-discord"></i> Discord Server</a></li>
+			<li><a href="#"><i class="fa fa-comments"></i> Mastodon</a></li>
+			<li><a href="#"><i class="fa fa-discord"></i> Discord Server</a></li>
 		</ul>
 	</nav>
 </div>
 
 <!-- FOOTER -->
 <footer>
-	<small>Site deployed via Git · Terminal vibes only · 🚬 fueled · Emotionally supported by Vesper-GPT </small>
+	<small>Site deployed via Git · 🚬 fueled · Emotionally supported by Vesper-GPT </small>
 </footer>
 
 </body>
