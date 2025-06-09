@@ -19,12 +19,8 @@
 		}
 
 		.ascii-logo {
-		background-color: inherit; /* make it blend with body */
-		border: none;
-		box-shadow: none;
-		padding: 0;
-		margin: 0;
-	}
+		background-color: #040304; /* make it blend with body */
+		}
 	</style>
 </head>
 <body class="dark-mode">
