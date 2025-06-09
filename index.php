@@ -19,7 +19,11 @@
 		}
 
 		.ascii-logo {
-		background-color: #040304; /* make it blend with body */
+  			white-space: pre;  /* keeps spaces and line breaks */
+			background-color: inherit; /* optional styling */
+			padding: 1em;
+			border-radius: 5px;
+			user-select: text;
 		}
 	</style>
 </head>
@@ -28,14 +32,13 @@
 <main>
 
 	<!-- ASCII ART LOGO -->
-	<pre class="ascii-logo">
+	<div class="ascii-logo">
     __                                                        __ 
    / /_  _________ _____   ___  ____ _   _______  ____  ___  / /_
   / __ \/ ___/ __ `/ __ \ / _ \/ __ \ | / / ___/ / __ \/ _ \/ __/
  / /_/ / /  / /_/ / / / //  __/ / / / |/ (__  ) / / / /  __/ /_  
-/_.___/_/   \__,_/_/ /_(_)___/_/ /_/|___/____(_)_/ /_/\___/\__/  
-                                                                 
-	</pre>
+/_.___/_/   \__,_/_/ /_(_)___/_/ /_/|___/____(_)_/ /_/\___/\__/                                                 
+	</div>
 
 	<!-- TIME-BASED GREETING -->
 	<?php
