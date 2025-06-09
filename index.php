@@ -78,6 +78,7 @@
 	<nav class="block">
 		<h3>Navigate</h3>
 		<ul>
+			<li><a href="index.php">Home</a></li>
 			<li><a href="projects.php">Projects</a></li>
 			<li><a href="blog.php">Blog</a></li>
 			<li><a href="now.php">Now</a></li>
