@@ -17,6 +17,14 @@
 			content: "_";
 			animation: blink 1s step-end infinite;
 		}
+
+		.ascii-logo {
+		background-color: inherit; /* make it blend with body */
+		border: none;
+		box-shadow: none;
+		padding: 0;
+		margin: 0;
+	}
 	</style>
 </head>
 <body class="dark-mode">
@@ -24,13 +32,13 @@
 <main>
 
 	<!-- ASCII ART LOGO -->
-	<pre>
-	_                                                       _   
-	| |                                                     | |  
-	| |__  _ __ __ _ _ __    ___ _ ____   _____   _ __   ___| |_ 
-	| '_ \| '__/ _` | '_ \  / _ \ '_ \ \ / / __| | '_ \ / _ \ __|
-	| |_) | | | (_| | | | ||  __/ | | \ V /\__ \_| | | |  __/ |_ 
-	|_.__/|_|  \__,_|_| |_(_)___|_| |_|\_/ |___(_)_| |_|\___|\__|
+	<pre class="ascii-logo">
+    __                                                        __ 
+   / /_  _________ _____   ___  ____ _   _______  ____  ___  / /_
+  / __ \/ ___/ __ `/ __ \ / _ \/ __ \ | / / ___/ / __ \/ _ \/ __/
+ / /_/ / /  / /_/ / / / //  __/ / / / |/ (__  ) / / / /  __/ /_  
+/_.___/_/   \__,_/_/ /_(_)___/_/ /_/|___/____(_)_/ /_/\___/\__/  
+                                                                 
 	</pre>
 
 	<!-- TIME-BASED GREETING -->
@@ -56,7 +64,7 @@
 		<ul>
 			<li><i class="fa fa-envelope"></i> <a href="mailto:<?=$user?>@envs.net"><?=$user?>@envs.net</a></li>
 			<li><i class="fa fa-github"></i> <a href="https://github.com/brannn86">github.com/brannn86</a></li>
-			<li><i class="fa fa-gamepad"></i> <a href="https://brannn86.itch.io">Itch.io</a></li>
+			<li><i class="fa fa-gamepad"></i> <a href="https://brannn86.itch.io">brannn86.itch.io</a></li>
 			<li><i class="fa fa-comments"></i> <a href="#">@bran@mastodon.social</a></li>
 			<li><i class="fa fa-discord"></i> brannn86 (or <a href="#">server invite</a>)</li>
 			<li><i class="fa fa-terminal"></i> IRC: <?=$user?>@tilde.chat</li>
